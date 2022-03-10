@@ -1,7 +1,6 @@
-import React from 'react'
 import { useState } from "react"
 
-export default function AddTask({onAdd}) {
+export default function AddTask({ onAdd }) {
 const [text, setText] = useState("")
 const [day, setDay] = useState("")
 const [reminder, setReminder] = useState(false)
@@ -13,6 +12,7 @@ const onSubmit = (e) =>{
     return
   }
   onAdd({text, day, reminder})
+  
   setText("")
   setDay("")
   setReminder(false)

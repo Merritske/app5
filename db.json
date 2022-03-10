@@ -1,0 +1,22 @@
+{
+  "tasks": [
+    {
+      "text": "koken",
+      "day": "dinsdag",
+      "reminder": true,
+      "id": 2
+    },
+    {
+      "text": "loop",
+      "day": "dinsdag",
+      "reminder": false,
+      "id": 10
+    },
+    {
+      "text": "wandelen",
+      "day": "dinsdag",
+      "reminder": true,
+      "id": 11
+    }
+  ]
+}

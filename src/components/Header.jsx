@@ -1,19 +1,19 @@
 import PropTypes from "prop-types"
 import Button from "./Button"
+import { useLocation } from "react-router-dom"
+
 export default function Header({title, onAdd, showAdd}){
-    function handleClick(){
-        console.log("piep")
-        }
-        
+ 
+const location = useLocation()        
 
     return(
         <header className="header">
             <h1 >{title}</h1>
-           <Button 
+          {location.pathname === "/"  && <Button 
           click={onAdd}
            color={showAdd ? "red": "green"} 
            text={showAdd ? "close" : "add"}
-           />
+           />}
       
         </header>
     )
